@@ -6,23 +6,19 @@ addEventListener("fetch", (event) => {
 const dockerHub = "https://registry-1.docker.io";
 
 const routes = {
-  "proxy.xuzheng0017.workers.dev/": "https://registry-1.docker.io",
+  // production
+  "docker.iotggo.com": dockerHub,
+  "quay.iotggo.com": "https://quay.io",
+  "gcr.iotggo.com": "https://gcr.io",
+  "k8s-gcr.iotggo.com": "https://k8s.gcr.io",
+  "k8s.iotggo.com": "https://registry.k8s.io",
+  "ghcr.iotggo.com": "https://ghcr.io",
+  "cloudsmith.iotggo.com": "https://docker.cloudsmith.io",
+  "ecr.iotggo.com": "https://public.ecr.aws",
+
+  // staging
+  "docker-staging.iotggo.com": dockerHub,
 };
-
-// const routes = {
-//   // production
-//   "docker.libcuda.so": dockerHub,
-//   "quay.libcuda.so": "https://quay.io",
-//   "gcr.libcuda.so": "https://gcr.io",
-//   "k8s-gcr.libcuda.so": "https://k8s.gcr.io",
-//   "k8s.libcuda.so": "https://registry.k8s.io",
-//   "ghcr.libcuda.so": "https://ghcr.io",
-//   "cloudsmith.libcuda.so": "https://docker.cloudsmith.io",
-//   "ecr.libcuda.so": "https://public.ecr.aws",
-
-//   // staging
-//   "docker-staging.libcuda.so": dockerHub,
-// };
 
 function routeByHosts(host) {
   if (host in routes) {
