@@ -13,11 +13,11 @@ const routes = {
   "k8s-gcr.yikuajie.com": "https://k8s.gcr.io",
   "k8s.yikuajie.com": "https://registry.k8s.io",
   "ghcr.yikuajie.com": "https://ghcr.io",
-  "cloudsmith.yikuajie.com": "https://docker.cloudsmith.io",
-  "ecr.yikuajie.com": "https://public.ecr.aws",
+  // "cloudsmith.yikuajie.com": "https://docker.cloudsmith.io",
+  // "ecr.yikuajie.com": "https://public.ecr.aws",
 
   // staging
-  "docker-staging.yikuajie.com": dockerHub,
+  // "docker-staging.yikuajie.com": dockerHub,
 };
 
 function routeByHosts(host) {
