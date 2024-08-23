@@ -17,7 +17,7 @@ const routes = {
   // "ecr.yikuajie.com": "https://public.ecr.aws",
 
   // staging
-  // "docker-staging.yikuajie.com": dockerHub,
+  "docker-staging.yikuajie.com": dockerHub,
 };
 
 function routeByHosts(host) {
