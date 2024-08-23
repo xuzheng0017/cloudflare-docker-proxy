@@ -13,13 +13,13 @@ TARGET_UPSTREAM = "https://registry-1.docker.io"
 [env.production]
 name = "cloudflare-docker-proxy"
 routes = [
-  { pattern = "docker.iotggo.com", custom_domain = true },
-  { pattern = "quay.iotggo.com", custom_domain = true },
-  { pattern = "gcr.iotggo.com", custom_domain = true },
-  { pattern = "k8s-gcr.iotggo.com", custom_domain = true },
-  { pattern = "k8s.iotggo.com", custom_domain = true },
-  { pattern = "ghcr.iotggo.com", custom_domain = true },
-  { pattern = "cloudsmith.iotggo.com", custom_domain = true },
+  { pattern = "docker.yikuajie.com", custom_domain = true },
+  { pattern = "quay.yikuajie.com", custom_domain = true },
+  { pattern = "gcr.yikuajie.com", custom_domain = true },
+  { pattern = "k8s-gcr.yikuajie.com", custom_domain = true },
+  { pattern = "k8s.yikuajie.com", custom_domain = true },
+  { pattern = "ghcr.yikuajie.com", custom_domain = true },
+  { pattern = "cloudsmith.yikuajie.com", custom_domain = true },
 ]
 
 [env.production.vars]
@@ -28,7 +28,7 @@ TARGET_UPSTREAM = ""
 
 [env.staging]
 name = "cloudflare-docker-proxy-staging"
-# route = { pattern = "docker-staging.iotggo.com", custom_domain = true }
+# route = { pattern = "docker-staging.yikuajie.com", custom_domain = true }
 
 [env.staging.vars]
 MODE = "staging"
